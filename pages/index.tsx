@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="py-2">
       <p>Home</p>
     </div>
   );

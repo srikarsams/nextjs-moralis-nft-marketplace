@@ -6,10 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "addEvents": "node addEvents.js",
+    "moralis:sync": "moralis-admin-cli connect-local-devchain --chain hardhat --moralisSubdomain 1xruadxoiq1z.usemoralis.com:2053 --frpcPath ./frpc/frpc",
+    "moralis:cloud": "moralis-admin-cli watch-cloud-folder --moralisApiKey DbSArlCSUeWkPs2 --moralisApiSecret 6i70tgYREmEoR7R --moralisSubdomain 1xruadxoiq1z.usemoralis.com --autoSave 1 --moralisCloudfolder ./cloud-functions"
   },
   "dependencies": {
+    "dotenv": "^16.0.2",
     "moralis": "^2.2.0",
+    "moralis-v1": "^1.11.0",
     "next": "12.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -25,6 +30,7 @@
     "eslint-config-next": "12.2.5",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
+    "ts-node": "^10.9.1",
     "typescript": "4.8.2"
   }
 }
