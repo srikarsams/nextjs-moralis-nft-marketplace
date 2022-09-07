@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-}
+  images: {
+    domains: ['ipfs.io', 'placehold.jp'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
